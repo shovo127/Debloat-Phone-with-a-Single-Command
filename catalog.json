@@ -1,0 +1,103 @@
+{
+  "safe_debloat": {
+    "com.milink.service": {
+      "name": "MiLink / Mi Smart Hub",
+      "description": "Xiaomi casting and smart device interconnectivity service. Known root cause of ghost/unwanted background notification chimes on HyperOS.",
+      "risk": "Low"
+    },
+    "com.mfashiongallery.emag": {
+      "name": "Wallpaper Carousel / Glance",
+      "description": "Lock screen dynamic wallpapers and news feed articles. Displays unwanted ads and drains background data/battery.",
+      "risk": "Low"
+    },
+    "games.vaveda.militaryoverturn": {
+      "name": "Military Overturn",
+      "description": "Pre-installed third-party bloatware game consuming local storage and background wakeups.",
+      "risk": "Low"
+    },
+    "com.miui.cleanmaster": {
+      "name": "MIUI Cleaner Engine (CleanMaster)",
+      "description": "Third-party cleaner definition engine embedded in Security app. Collects telemetry and serves promotional suggestions.",
+      "risk": "Low"
+    },
+    "com.miui.analytics": {
+      "name": "MIUI Analytics",
+      "description": "Xiaomi telemetry and behavioral tracking service that sends usage statistics back to OEM servers.",
+      "risk": "Low"
+    },
+    "com.miui.carlink": {
+      "name": "CarWith",
+      "description": "Xiaomi in-car screen projection system. Safe to disable if you do not connect your device to a car infotainment console.",
+      "risk": "Low"
+    },
+    "com.xiaomi.mirror": {
+      "name": "Screen Mirroring Service",
+      "description": "Background service for CarWith and PC screen mirroring. Safely disableable if mirroring is unused.",
+      "risk": "Low"
+    },
+    "com.xiaomi.gamecenter.sdk.service": {
+      "name": "Xiaomi Game Center SDK",
+      "description": "Background framework for Xiaomi game services, notifications, and telemetry.",
+      "risk": "Low"
+    },
+    "com.xiaomi.market": {
+      "name": "Xiaomi GetApps Store",
+      "description": "Secondary OEM app store. Redundant when Google Play Store is used; frequently pushes unsolicited app updates and marketing popups.",
+      "risk": "Low"
+    }
+  },
+  "optional": {
+    "com.google.android.googlequicksearchbox": {
+      "name": "Google App",
+      "description": "Provides Google Search bar, Google Discover feed, and Google Assistant voice triggers.",
+      "risk": "Medium"
+    },
+    "cn.wps.moffice_eng.xiaomi.lite": {
+      "name": "WPS Office Lite (Xiaomi)",
+      "description": "Pre-installed document reader for PDF, Word, and Excel files.",
+      "risk": "Low"
+    },
+    "com.duokan.phone.remotecontroller": {
+      "name": "Mi Remote Controller",
+      "description": "Infrared (IR) remote control app for operating TVs, ACs, and home appliances.",
+      "risk": "Low"
+    },
+    "com.miui.notes": {
+      "name": "Xiaomi Notes",
+      "description": "Default Xiaomi note-taking application.",
+      "risk": "Low"
+    },
+    "com.miui.calculator": {
+      "name": "Xiaomi Calculator",
+      "description": "Default Xiaomi scientific calculator and currency converter.",
+      "risk": "Low"
+    },
+    "com.miui.compass": {
+      "name": "Xiaomi Compass",
+      "description": "Default Xiaomi compass and level sensor tool.",
+      "risk": "Low"
+    },
+    "com.android.calendar": {
+      "name": "Xiaomi Calendar",
+      "description": "Secondary calendar app when Google Calendar is also installed.",
+      "risk": "Low"
+    }
+  },
+  "critical_system": {
+    "com.android.settings": "Android Settings Core",
+    "com.android.systemui": "System UI (Status bar, Navigation, Notification Shade)",
+    "com.google.android.webview": "Android System WebView (HTML rendering inside apps)",
+    "com.google.android.gms": "Google Play Services (Push notifications, Auth, Location)",
+    "com.google.android.gsf": "Google Services Framework",
+    "com.google.android.partnersetup": "Google Partner Setup",
+    "com.android.phone": "Telephony and Cellular Radio Control",
+    "com.android.server.telecom": "Telecom Routing and Call Dispatcher",
+    "com.android.providers.telephony": "SMS & Telephony Database Provider",
+    "com.android.providers.contacts": "Contacts Storage Provider",
+    "com.android.providers.media": "Media Storage and Indexing Provider",
+    "com.android.providers.settings": "System Settings Database Provider",
+    "com.miui.securitycenter": "Xiaomi Security Manager Core",
+    "com.miui.securitycore": "Xiaomi Security System Framework",
+    "com.android.permissioncontroller": "Runtime Permission Controller"
+  }
+}
